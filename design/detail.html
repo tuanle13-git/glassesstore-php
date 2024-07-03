@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+    <style>
+        .imgcon {
+            position: relative;
+            width: 300px; /* Chỉnh kích thước theo nhu cầu */
+            height: 300px; /* Chỉnh kích thước theo nhu cầu */
+        }
+
+        .mainimg, .sub {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Đảm bảo ảnh bao phủ toàn bộ vùng chứa */
+            height: 100%; /* Đảm bảo ảnh bao phủ toàn bộ vùng chứa */
+        }
+
+        .mainimg {
+            z-index: 1; /* Ban đầu, .mainimg có z-index cao hơn .sub */
+        }
+
+        .sub {
+            z-index: 0; /* Ban đầu, .sub có z-index thấp hơn .mainimg */
+        }
+
+        .imgcon:hover .mainimg {
+            z-index: -1; /* Khi hover, đẩy .mainimg ra sau .sub */
+        }
+
+        .addicon {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 2; /* Đảm bảo nút luôn ở phía trên */
+            padding: 10px 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgcon">
+        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png" alt="Main Image">
+        <img class="sub" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,c_limit,w_384,q_auto/https://static.mejuri.com/legacy-front/production/system/spree/products/30601/original/1-BeadedHuggieHoops-14k-Stack1_027.jpg?1697734365" alt="Sub Image">
+        <div class="addicon">Thêm vào giỏ</div>
+    </div>
+</body>
+</html>
