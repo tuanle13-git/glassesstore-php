@@ -19,33 +19,49 @@
     </style>
 </head>
 
-<body>
-    <nav style="border-bottom: solid black 1px;" style="z-index: 10000;"
+<body> 
+    <nav style="border-bottom: solid black 1px;z-index: 10000; padding: 0 !important;" id="getheight"
         class="fixedtopint1 container-fluid navbar navbar-expand-lg navbar-light sticky-top top-0  mx-auto d-block bg-white flex-wrap d-flex justify-content-between">
-        <div class="container-fluid d-flex justify-content-between">
+        <div class="container-fluid d-flex justify-content-between position-relative ">     
+            <div style=" padding: 60px 20%; border-top: 1px solid black;"  class="searcharea d-none container-fluid bg-white position-absolute top-100 start-0 end-0 text-dark ">
+             <div style="flex-wrap: nowrap;">
+                <input type="text" name="" id="" class="searchinput" placeholder="Tìm mọi thứ bạn muốn" style="width: 80%;font-size: 24; border-top: 0; border-left: 0;
+                     border-right: 0; border-bottom: 1 solid black;">
+                
+                <button class="entersearch" rel="nofollow" target="_blank" style="background: none ;">
+                    <i data-testid="nav-dp-l1-user-navigation-search-icon" class="styled__I-sc-1mg62fn-0 kcEkud"><svg width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.8271 19.047L15.6287 15.0642C16.6556 13.8448 17.2174 12.3067 17.216 10.7186C17.2285 8.95062 16.5323 7.25003 15.2802 5.99032C14.0281 4.7306 12.3225 4.01475 10.5381 4C8.78206 4.06474 7.11972 4.80141 5.90046 6.05518C4.68121 7.30895 4 8.98219 4 10.7232C4 12.4643 4.68121 14.1375 5.90046 15.3913C7.11972 16.645 8.78206 17.3817 10.5381 17.4464C12.1172 17.4481 13.6442 16.8865 14.8398 15.8645L19.0569 19.8473C19.164 19.9484 19.3073 20.0033 19.4553 19.9998C19.6032 19.9964 19.7437 19.9348 19.8458 19.8287C19.948 19.7225 20.0034 19.5806 19.9998 19.434C19.9963 19.2874 19.9342 19.1482 19.8271 19.047ZM4.97788 10.672C4.97775 9.20407 5.56115 7.7951 6.60179 6.75014C7.64243 5.70518 9.05657 5.10832 10.5381 5.08874C12.0327 5.08874 13.4661 5.67698 14.5229 6.72405C15.5797 7.77112 16.1735 9.19126 16.1735 10.672C16.1735 12.1528 15.5797 13.573 14.5229 14.62C13.4661 15.6671 12.0327 16.2553 10.5381 16.2553C9.06467 16.2359 7.65752 15.6455 6.61819 14.6105C5.57886 13.5756 4.99003 12.1785 4.97788 10.7186V10.672Z"
+                                fill="currentColor"></path>
+                        </svg></i>
+                </button>
+                <button style="background: none; border: 0" class="closesearch">X</button>
+                
+                </div>
+                
+                    <p>Tìm mọi thứ từ sản phần /nhãn hiệu hoặc kiểu dáng</p>
+              
+              </div> 
             <div class="d-flex justify-content-center" style="padding-left: 30px;">
                 <a href="" class="navbar-brand ">
                     <img src="../public/image/logo/logo.png" alt="" height="40">
                 </a>
             </div>
-
+            
             <div class="collapse navbar-collapse d-flex align-items-center justify-content-center " id="navbarNav ">
                 <ul class="navbar-nav ">
                     <li class="relativem nav-item me-5 needoffset">
-                        <a id="checkleft" class="borderbottom position-relative nav-link" href="#">KHUYÊN TAI</a>
+                        <a id="checkleft" class="borderbottom position-relative nav-link" href="#">KIỂU DÁNG</a>
                     </li>
                     <li class="relativem nav-item me-5">
-                        <a class="borderbottom position-relative nav-link text-dark" href="#">HOA TAI</a>
+                        <a class="borderbottom position-relative nav-link text-dark" href="#">THƯƠNG HIỆU</a>
                     </li>
                     <li class="relativem nav-item me-5">
-                        <a class="borderbottom position-relative nav-link text-dark" href="#">NHẪN</a>
+                        <a class="borderbottom position-relative nav-link text-dark" href="#">LOẠI GỌNG</a>
                     </li>
-                    <li class="relativem nav-item me-5">
-                        <a class="borderbottom position-relative nav-link text-dark" href="#">VÒNG CỔ</a>
-                    </li>
-                    <li class="relativem nav-item me-5">
-                        <a class="borderbottom position-relative nav-link text-dark" href="#">VÒNG TAY</a>
-                    </li>
+                   
+                   
                 </ul>
 
             </div>
@@ -54,14 +70,14 @@
             <ul class="navbar-nav list-inline flex-row ">
                 <!-- Icons -->
                 <li class="nav-item  me-3">
-                    <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+                    <div class="nav-link searchbtn" rel="nofollow" target="_blank">
                         <i data-testid="nav-dp-l1-user-navigation-search-icon"
                             class="styled__I-sc-1mg62fn-0 kcEkud"><svg width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M19.8271 19.047L15.6287 15.0642C16.6556 13.8448 17.2174 12.3067 17.216 10.7186C17.2285 8.95062 16.5323 7.25003 15.2802 5.99032C14.0281 4.7306 12.3225 4.01475 10.5381 4C8.78206 4.06474 7.11972 4.80141 5.90046 6.05518C4.68121 7.30895 4 8.98219 4 10.7232C4 12.4643 4.68121 14.1375 5.90046 15.3913C7.11972 16.645 8.78206 17.3817 10.5381 17.4464C12.1172 17.4481 13.6442 16.8865 14.8398 15.8645L19.0569 19.8473C19.164 19.9484 19.3073 20.0033 19.4553 19.9998C19.6032 19.9964 19.7437 19.9348 19.8458 19.8287C19.948 19.7225 20.0034 19.5806 19.9998 19.434C19.9963 19.2874 19.9342 19.1482 19.8271 19.047ZM4.97788 10.672C4.97775 9.20407 5.56115 7.7951 6.60179 6.75014C7.64243 5.70518 9.05657 5.10832 10.5381 5.08874C12.0327 5.08874 13.4661 5.67698 14.5229 6.72405C15.5797 7.77112 16.1735 9.19126 16.1735 10.672C16.1735 12.1528 15.5797 13.573 14.5229 14.62C13.4661 15.6671 12.0327 16.2553 10.5381 16.2553C9.06467 16.2359 7.65752 15.6455 6.61819 14.6105C5.57886 13.5756 4.99003 12.1785 4.97788 10.7186V10.672Z"
                                     fill="currentColor"></path>
-                            </svg></i> </a>
+                            </svg></i> </div>
                 </li>
                 <li class="nav-item me-3">
                     <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
@@ -119,15 +135,15 @@
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://www.w3schools.com/bootstrap5/la.jpg" alt="Los Angeles" class="d-block"
+                <img src="../public/image/banner/slideShow_f1_1.webp" alt="Los Angeles" class="d-block"
                     style="width:100%">
             </div>
             <div class="carousel-item">
-                <img src="https://www.w3schools.com/bootstrap5/chicago.jpg" alt="Chicago" class="d-block"
+                <img src="../public/image/banner/slideShow_f1_2.webp" alt="Chicago" class="d-block"
                     style="width:100%">
             </div>
             <div class="carousel-item">
-                <img src="https://www.w3schools.com/bootstrap5/ny.jpg" alt="New York" class="d-block"
+                <img src="../public/image/banner/slideShow_f1_3.webp" alt="New York" class="d-block"
                     style="width:100%">
             </div>
         </div>
@@ -138,7 +154,7 @@
     <div class="container-fluid ">
         <div class="row">
             <div class="col-lg-6 col-sm-6 col-md-6 position-relative borderbuild" style="padding: 0 !important;">
-                <img src="https://res.cloudinary.com/mejuri-com/image/upload/f_auto,c_limit,w_1920,q_auto/q_auto/v1717127892/2024/Bold%20statements/Web/Sidekicks/Sidekick-SummerDesk.jpg"
+                <img src="https://static.zennioptical.com/marketing/campaign/sunglasses/2024/polarized_sun/hp/240620_PolarizedSun_site_campaign_hp_3Tile-lg.png"
                     class="w-100 h-100">
                 <div class="container-fluid position-absolute end-0 start-0 text-center " style="bottom: 10%;">
 
@@ -157,7 +173,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-sm-6 col-md-6 position-relative borderbuild" style="padding: 0 !important;">
-                <img src="https://res.cloudinary.com/mejuri-com/image/upload/f_auto,c_limit,w_1920,q_auto/q_auto/v1712163239/2024/Batch%204%2B5/APRIL%208/Hoops_Sidekick-April8-D.jpg"
+                <img src="https://static.zennioptical.com/marketing/campaign/sunglasses/2024/nonrx/240618_sun_squad_hp_3Tile_lg.png"
                     class="w-100 h-100" alt="">
                 <div class="container-fluid position-absolute  end-0 start-0 text-center " style="bottom: 10%;">
 
@@ -180,8 +196,356 @@
 
 
     </div>
-    <a class="p-3 text-dark d-flex justify-content-end font-trirong"><b>XEM THÊM</b></a>
+  
     </div>
+    
+    <div class="container position-relative ">
+        <p class="pt-3 d-flex justify-content-center"><b>BÁN CHẠY NHẤT</b></p>
+          <div class="row slidecontainer">
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="imgcon position-relative" >
+                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                            alt="" style="z-index: 2; ">
+                        
+                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                    </div>
+                    <div class="" style="margin-top: 2px;">
+                        <h6>Boyfriend Bold Bracelet</h6>
+                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                    </div>
+                </a>
+            </div>
+                <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                    <a href="" class="text-decoration-none text-dark">
+                        <div class="imgcon position-relative" >
+                            <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                                alt="" style="z-index: 2; ">
+                            
+                            <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                        </div>
+                        <div class="" style="margin-top: 2px;">
+                            <h6>Boyfriend Bold Bracelet</h6>
+                            <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                            <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                    <a href="" class="text-decoration-none text-dark">
+                        <div class="imgcon position-relative" >
+                            <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                                alt="" style="z-index: 2; ">
+                            <img class="sub" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,c_limit,w_384,q_auto/https://static.mejuri.com/legacy-front/production/system/spree/products/30601/original/1-BeadedHuggieHoops-14k-Stack1_027.jpg?1697734365"
+                                alt="" style="z-index: 1;" >
+                            
+                            <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                        </div>
+                        <div class="" style="margin-top: 2px;">
+                            <h6>Boyfriend Bold Bracelet</h6>
+                            <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                            <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
+    
+                    <a href="" class="text-decoration-none text-dark">
+                        <div class="imgcon position-relative" >
+                            <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
+                                alt="" style="z-index: 1; ">
+                            <img class="sub" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,c_limit,w_384,q_auto/https://static.mejuri.com/legacy-front/production/system/spree/products/30601/original/1-BeadedHuggieHoops-14k-Stack1_027.jpg?1697734365"
+                                alt="" style="z-index: 0;" >
+                            
+                            <div class="addicon  rounded-pill">Thêm vào giỏ</div>
+                        </div>
+                        <div class="" style="margin-top: 2px;">
+                            <h6>Boyfriend Bold Bracelet</h6>
+                            <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
+                            <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
+                        </div>
+                    </a>
+                </div>
+            
+               
+              </div>
+            </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-6 col-lg-6 col-md-6 col-sm-12 borderbuild" style="padding: 0 !important;">
@@ -208,63 +572,13 @@
     </div>
 
 
-    <div class="container-sm">
-        <div class="row">
-            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
-
-                <a href="" class="text-decoration-none text-dark">
-                    <div class="imgcon position-relative" >
-                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
-                            alt="" style="z-index: 2; ">
-                        
-                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
-                    </div>
-                    <div class="" style="margin-top: 2px;">
-                        <h6>Boyfriend Bold Bracelet</h6>
-                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
-                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
-
-                <a href="" class="text-decoration-none text-dark">
-                    <div class="imgcon position-relative" >
-                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
-                            alt="" style="z-index: 2; ">
-                        <img class="sub" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,c_limit,w_384,q_auto/https://static.mejuri.com/legacy-front/production/system/spree/products/30601/original/1-BeadedHuggieHoops-14k-Stack1_027.jpg?1697734365"
-                            alt="" style="z-index: 1;" >
-                        
-                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
-                    </div>
-                    <div class="" style="margin-top: 2px;">
-                        <h6>Boyfriend Bold Bracelet</h6>
-                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
-                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-3 product" style="background-color: rgb(250,247,240); padding: 2px;">
-
-                <a href="" class="text-decoration-none text-dark">
-                    <div class="imgcon position-relative" >
-                        <img class="mainimg" src="https://product.hstatic.net/200000689681/product/2_774e332371d644559837e22b76a90332_large.png"
-                            alt="" style="z-index: 1; ">
-                        <img class="sub" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,c_limit,w_384,q_auto/https://static.mejuri.com/legacy-front/production/system/spree/products/30601/original/1-BeadedHuggieHoops-14k-Stack1_027.jpg?1697734365"
-                            alt="" style="z-index: 0;" >
-                        
-                        <div class="addicon  rounded-pill">Thêm vào giỏ</div>
-                    </div>
-                    <div class="" style="margin-top: 2px;">
-                        <h6>Boyfriend Bold Bracelet</h6>
-                        <p class="m-0 metal_stone_name" style="font-size: 14px;"></p>
-                        <p style="margin: 0 !important;" style="font-size: 14px;">1000000 VNĐ</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
+   
+<footer class="container-fluid text-center p-5" style="background-color: rgb(250,247,240); border-top: 1px solid black;">
+    <h4>ĐÔ ÁN CÁ NHÂN CỦA LÊ VĂN TUẤN</H6>
+    <H3>FACEBOOK: </H3>
+    <H3>GMAIL: </H3>
+    <H3>GITHUB: </H3>
+</footer>
 </body>
 
 </html>
