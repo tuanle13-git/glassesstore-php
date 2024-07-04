@@ -27,6 +27,20 @@ function get_header (){
     } 
         else echo "file not exist2";
 };
+function get_nav (){
+    $path = LAYOUTPATH.DIRECTORY_SEPARATOR."nav.php";
+    if (file_exists($path)) {
+        require $path; 
+    } 
+        else echo "file not exist2";
+};
+function get_footer (){
+    $path = LAYOUTPATH.DIRECTORY_SEPARATOR."footer.php";
+    if (file_exists($path)) {
+        require $path; 
+    } 
+        else echo "file not exist2";
+};
 $page = isset($_GET['page'])?$_GET['page']:'Home';
 $act = isset($_GET['action'])?$_GET['action']:'construct';
 ?>
